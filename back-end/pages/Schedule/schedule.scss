@@ -1,0 +1,44 @@
+#schedule-container {
+  header {
+    border-bottom: 1px solid silver;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .truck-picker {
+      margin-left: auto;
+    }
+
+    .btn {
+      top: 0;
+    }
+
+    .spinner {
+      display: inline-block;
+    }
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+
+      .SingleDatePickerInput .DateInput {
+        width: 100%;
+      }
+
+      .truck-picker {
+        margin: 10px auto 0;
+      }
+    }
+
+    @media (min-width: 501px) {
+      flex-direction: row;
+    }
+  }
+
+  .spinner {
+    display: block;
+    height: 20px;
+    width: 20px;
+  }
+}

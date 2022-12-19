@@ -1,0 +1,26 @@
+@import "../../mixins.scss";
+
+.holidays__table {
+  th {
+    @include cutOffTitles;
+  }
+
+  tbody {
+    tr:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.buttonsContainer {
+  width: 100%;
+
+  .first {
+    display: inline;
+    margin-right: 8px;
+  }
+
+  .second {
+    display: inline;
+  }
+}

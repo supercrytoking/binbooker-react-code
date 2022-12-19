@@ -1,0 +1,15 @@
+.terms-of-use {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .well {
+    width: 560px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+}

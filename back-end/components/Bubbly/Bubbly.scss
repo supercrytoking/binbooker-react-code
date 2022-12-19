@@ -1,0 +1,38 @@
+.bubbly {
+  text-align: center;
+  margin-top: 40px;
+  width: 100%;
+
+  h4 {
+    font-size: 24px;
+    margin: 24px auto 8px;
+  }
+
+  p {
+    margin-bottom: 40px;
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 40px;
+    padding: 0 20px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 2px solid #e3e5e8;
+    color: #000;
+
+    i {
+      margin-left: 10px;
+    }
+  }
+
+  button:hover {
+    background-color: #00a4f9;
+    border: none;
+    color: #fff;
+  }
+}

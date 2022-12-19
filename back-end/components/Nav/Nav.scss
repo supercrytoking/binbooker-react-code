@@ -1,0 +1,139 @@
+$border-thickness: 4px;
+$blue: #337ab7;
+$lighter-grey: #fafafa;
+$light-grey: #efefef;
+$dark-grey: #cacaca;
+$space: 8px;
+
+@mixin visible() {
+  height: 36px;
+  padding: $space;
+  opacity: 1;
+}
+
+@mixin hidden() {
+  height: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+.backend-nav {
+  .logo {
+    flex: 1;
+    margin: $space;
+    text-align: center;
+  }
+
+  .links {
+    flex: 1 1 100%;
+  }
+
+  .expand-collapse {
+    display: none;
+  }
+
+  .link {
+    border-left: $border-thickness solid white;
+    color: $blue;
+    cursor: pointer;
+    display: block;
+    transition: all 0.3s ease;
+    @include visible();
+  }
+
+  .link:hover {
+    background-color: $lighter-grey;
+    border-left: $border-thickness solid $dark-grey;
+    text-decoration: none;
+  }
+
+  .link--active {
+    background-color: $light-grey;
+    border-left: $border-thickness solid $blue;
+    text-decoration: none;
+  }
+
+  .link--hidden {
+    @include hidden();
+  }
+
+  .sublink {
+    padding-left: $space * 2;
+  }
+
+  .glyphicon-triangle-right {
+    font-size: 12px;
+    margin-left: $space;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+  }
+
+  .arrow-rotate {
+    transform: rotate(90deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .backend-nav {
+    .logo {
+      display: none;
+    }
+
+    .links {
+      flex: 0 0 calc(100% - 44px);
+      min-height: 36px;
+    }
+
+    .link {
+      @include hidden();
+    }
+
+    .link--active {
+      background-color: white;
+      @include visible();
+    }
+
+    .glyphicon-remove {
+      display: none;
+    }
+
+    .expand-collapse {
+      color: $blue;
+      cursor: pointer;
+      display: block;
+      font-size: 24px;
+      height: 28px;
+      left: $space;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      top: 4px;
+    }
+  }
+
+  .backend-nav--expanded {
+    .link {
+      @include visible();
+    }
+
+    .link--hidden {
+      @include hidden();
+    }
+
+    .link--active {
+      background-color: $light-grey;
+    }
+
+    .sublink {
+      padding-left: $space * 2;
+    }
+
+    .glyphicon-menu-hamburger {
+      display: none;
+    }
+
+    .glyphicon-remove {
+      display: block;
+    }
+  }
+}

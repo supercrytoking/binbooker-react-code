@@ -1,0 +1,23 @@
+.credit-card-form {
+  .row {
+    margin-bottom: 10px;
+  }
+
+  .StripeElement {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px 12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .credit-card-form {
+    .expiry-wrapper {
+      padding-right: 0;
+    }
+
+    .cvc-wrapper {
+      padding-left: 15px;
+    }
+  }
+}

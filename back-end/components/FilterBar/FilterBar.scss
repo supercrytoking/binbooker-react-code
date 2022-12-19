@@ -1,0 +1,22 @@
+.jk-filter {
+  input::-webkit-input-placeholder {
+    /* Chrome */
+    color: #ccc;
+    font-style: italic;
+  }
+  input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #ccc;
+    font-style: italic;
+  }
+  input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #ccc;
+    font-style: italic;
+    opacity: 1;
+  }
+
+  &.input-group .form-control {
+    z-index: 0;
+  }
+}

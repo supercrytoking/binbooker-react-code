@@ -1,0 +1,74 @@
+$border: 2px solid silver;
+
+.truck-appointment {
+  border-left: $border;
+  margin-left: 16px;
+  padding: 8px 0 8px 24px;
+  position: relative;
+
+  .status-circle {
+    background-color: white;
+    border: $border;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 32px;
+    left: -17px;
+    position: absolute;
+    top: 22px;
+    width: 32px;
+
+    .status-circle__inner {
+      display: none;
+    }
+  }
+
+  .details {
+    font-weight: bold;
+  }
+}
+
+.truck-appointment--completed {
+  color: #999999;
+  font-style: italic;
+
+  .status-circle {
+    background: #337ab7;
+
+    .status-circle__inner {
+      color: white;
+      display: block;
+      position: relative;
+      text-align: center;
+
+      .glyphicon-ok {
+        top: 6px;
+      }
+    }
+  }
+
+  .details {
+    font-weight: normal;
+  }
+
+  a {
+    color: #999999;
+  }
+}
+
+.truck-appointment--filler {
+  .status-circle {
+    top: 4px;
+  }
+}
+
+.truck-appointment__sidepanel-trigger {
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid silver;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px 0 0 0;
+}

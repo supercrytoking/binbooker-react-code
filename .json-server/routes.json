@@ -1,0 +1,16 @@
+{
+  "/api/v2/coupons?serviceId=:serviceId&startDate=:startDate&endDate=:endDate&postalCode=:postalCode": "/get-coupons-create-order-backend",
+  "/api/v2/customers/:id/orders": "/customers-orders",
+  "/api/v2/customers?email=*": "/customers-email-new",
+  "/api/v2/customers?email=fail@fail.com": "/customers-email-existing",
+  "/api/v2/pc/*": "/pc",
+  "/api/v2/staff?loggedIn": "/staff-logged-in",
+  "/api/v2/services?*": "/services-create-order",
+  "/api/v2/*": "/$1",
+  "/api/v2/customers?term=:term": "/customers-search",
+  "/api/v1/order.php?id=:id": "/order",
+  "/api/v1/truck-schedule.php?*": "/truck-schedule",
+  "/api/v1/trucks.php": "/trucks",
+  "/api/v1/is-logged-in.php": "/is-logged-in",
+  "/api/v1/*": "/$1"
+}

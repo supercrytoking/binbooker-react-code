@@ -1,0 +1,27 @@
+.settings-page {
+  p.description {
+    font-style: italic;
+    margin-top: 10px;
+  }
+
+  .alert {
+    margin-top: 20px;
+
+    ul {
+      margin-bottom: 0;
+    }
+  }
+
+  form {
+    margin-top: 16px;
+  }
+
+  label {
+    margin-top: 8px;
+  }
+
+  .glyphicon-question-sign {
+    color: silver;
+    margin-left: 4px;
+  }
+}

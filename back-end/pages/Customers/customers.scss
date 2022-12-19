@@ -1,0 +1,65 @@
+@import "../../mixins.scss";
+
+.customers-container {
+  th {
+    @include cutOffTitles;
+  }
+
+  .customers__name {
+    width: 20%;
+  }
+
+  .customers__phone {
+    width: 20%;
+  }
+
+  .customers__email {
+    width: 30%;
+  }
+
+  .customers__address {
+    width: 30%;
+  }
+}
+
+.customers__sidepanel__orders {
+  th {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  tbody tr {
+    cursor: default;
+  }
+
+  .id-column {
+    width: 80px;
+  }
+
+  .customers__sidepanel__orders__order--deleted {
+    font-style: italic;
+    text-decoration: line-through;
+  }
+}
+
+
+
+.customer-details-tab {
+  .customers__postal-code-and-province,
+  .customers__full-name {
+    display: flex;
+  }
+
+  .customers__postal-code,
+  .customers__first-name {
+    flex: 1;
+    margin-right: 8px;
+  }
+
+  .customers__province,
+  .customers__last-name {
+    flex: 1;
+    margin-left: 8px;
+  }
+}

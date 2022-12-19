@@ -1,0 +1,27 @@
+.bins-map {
+  .bins-map__marker {
+    width: 40px;
+    height: 40px;
+    border-radius: 50% 50% 50% 0;
+    background: #5cb85c;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 50%;
+    top: 50%;
+    margin: -20px 0 0 -20px;
+  }
+
+  .bins-map__marker:after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    margin: 11px 0 0 11px;
+    background: #fff;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  .bins-map__marker:hover {
+    background-color: #4cae4c;
+  }
+}

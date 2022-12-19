@@ -1,0 +1,15 @@
+.settings-page__content-tab {
+  .form-group {
+    .quill {
+      margin-bottom: 16px;
+
+      .ql-container {
+        height: 80px;
+      }
+
+      .ql-disabled {
+        background-color: #eee;
+      }
+    }
+  }
+}

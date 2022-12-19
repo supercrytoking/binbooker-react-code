@@ -1,0 +1,18 @@
+.schedule-page__appointment--filler {
+  color: #999;
+
+  .title {
+    background: repeating-linear-gradient(135deg, #efefef, #efefef 5px, #ddd 5px, #ddd 6px);
+  }
+
+  .glyphicon-trash {
+    cursor: pointer;
+    float: right;
+    font-size: 14px;
+    margin-top: 5px;
+
+    &:hover {
+      color: #333;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.login-app-wrapper {
+  margin: 50px auto;
+  width: 500px;
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .login-app-wrapper {
+    width: 80%;
+  }
+}

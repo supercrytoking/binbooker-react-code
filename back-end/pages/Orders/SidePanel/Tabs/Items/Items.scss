@@ -1,0 +1,86 @@
+.sidepanel__items-tab {
+  .quantity-column {
+    width: 42px;
+  }
+  .price-column {
+    width: 64px;
+  }
+
+  .total-column {
+    width: 64px;
+  }
+
+  table > tbody > tr > td {
+    border-top: none;
+  }
+
+  tr td {
+    border-bottom: 1px solid #ddd;
+  }
+
+  tr:hover {
+    cursor: auto;
+    background-color: inherit;
+  }
+
+  th,
+  td {
+    &:nth-of-type(2),
+    &:nth-of-type(3),
+    &:nth-of-type(4),
+    &:nth-of-type(5) {
+      text-align: right;
+    }
+  }
+
+  .order-item__money {
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .total-row {
+    background-color: transparent !important;
+
+    td {
+      border-bottom: none;
+      font-style: italic;
+      padding: 2px;
+    }
+
+    .order-items__title {
+      text-align: right;
+      padding-right: 8px;
+    }
+
+    .order-items__amount {
+      padding-left: 8px;
+    }
+  }
+
+  .grand-total-row td {
+    font-weight: bold;
+  }
+
+  .btn-primary {
+    margin-right: 8px;
+  }
+}
+
+.sidepanel__items-tab__more-menu {
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    cursor: pointer;
+    padding: 4px 16px;
+
+    &:hover {
+      background-color: #eee;
+    }
+  }
+
+  .danger {
+    border-top: 1px solid #ddd;
+    color: #d9534f;
+  }
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "1",
+    "userId": "1",
+    "size": "5",
+    "foreignId": "aa",
+    "isActive": "1",
+    "binId": "1",
+    "orderId": "1",
+    "companyName": "",
+    "customerName": "Adam S. Doe",
+    "startDateTime": "2021-06-18 09:00:00",
+    "endDateTime": "2021-06-30 00:59:59"
+  },
+  {
+    "id": "2",
+    "userId": "1",
+    "size": "10",
+    "foreignId": "b",
+    "isActive": "1",
+    "binId": "2",
+    "orderId": null,
+    "companyName": null,
+    "customerName": null,
+    "startDateTime": null,
+    "endDateTime": null
+  },
+  {
+    "id": "3",
+    "userId": "1",
+    "size": "15",
+    "foreignId": "c",
+    "isActive": "1",
+    "binId": "3",
+    "orderId": null,
+    "companyName": null,
+    "customerName": null,
+    "startDateTime": null,
+    "endDateTime": null
+  },
+  {
+    "id": "4",
+    "userId": "1",
+    "size": "20",
+    "foreignId": "d",
+    "isActive": "1",
+    "binId": "4",
+    "orderId": "2",
+    "companyName": "Ju Jubes Inc.",
+    "customerName": "juu juu",
+    "startDateTime": "2021-06-18 09:00:00",
+    "endDateTime": "2021-07-12 00:59:59"
+  }
+]

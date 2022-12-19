@@ -1,0 +1,23 @@
+.services__pricing {
+  .zone {
+    display: flex;
+    margin-bottom: 4px;
+
+    .zone__toggle-wrapper {
+      flex: 0 0 36px;
+      margin-right: 8px;
+    }
+
+    .zone__name {
+      flex: 1;
+    }
+
+    .zone__price {
+      flex: 0 0 120px;
+
+      .form-group {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

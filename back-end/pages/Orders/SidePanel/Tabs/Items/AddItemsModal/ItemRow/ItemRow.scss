@@ -1,0 +1,30 @@
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+
+  .item-row__trash {
+    flex: 0 0 32px;
+  }
+
+  .item-row__quantity {
+    flex: 0 0 80px;
+    margin-right: 8px;
+  }
+
+  .item-row__item {
+    flex: 1 1 200px;
+    margin-right: 8px;
+  }
+
+  .item-row__unit-price {
+    flex: 0 0 128px;
+    margin-right: 8px;
+  }
+
+  .item-row__line-subtotal {
+    align-self: center;
+    flex: 0 0 64px;
+    text-align: right;
+  }
+}

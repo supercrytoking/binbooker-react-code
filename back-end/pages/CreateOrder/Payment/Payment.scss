@@ -1,0 +1,170 @@
+.create-order-payment {
+  .edit-link {
+    font-size: 12px;
+    padding-left: 12px;
+    font-weight: normal;
+  }
+
+  .italic {
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  .terms-and-conditions-wrapper {
+    margin-top: 8px;
+
+    .terms-and-conditions {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-left: 15px;
+      max-height: 80px;
+      overflow: scroll;
+      padding: 6px 12px;
+
+      h4 {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .main-panel {
+    &.col-sm-6 {
+      padding: 0 8px;
+    }
+
+    hr {
+      margin: 32px 0;
+    }
+
+    .row {
+      margin: 0 0 8px 0;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      > div {
+        margin-left: 8px;
+      }
+    }
+
+    .no-padding:first-of-type {
+      padding-left: 0;
+    }
+
+    .no-padding:last-of-type {
+      padding-right: 0;
+    }
+
+    .col-md-8 {
+      text-align: right;
+    }
+
+    .payment-method-wrapper {
+      label,
+      div.col-md-8 {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
+  .side-panel {
+    background-color: #eee;
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 40px;
+
+    h4 {
+      margin-top: 0;
+    }
+
+    .row {
+      margin: 0;
+    }
+
+    .dates {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+
+      div {
+        flex: 1;
+      }
+    }
+
+    .driver-notes {
+      font-style: italic;
+    }
+  }
+
+  .credit-card-fields {
+    margin: 10px 0 0 0;
+    position: relative;
+
+    .popover {
+      background-color: #f2dede;
+      border: 1px solid #ebccd1;
+      left: 110px;
+      position: absolute;
+      top: -36px;
+
+      .arrow:after {
+        border-top-color: #f2dede;
+      }
+    }
+  }
+
+  .action-bar {
+    margin-top: 20px;
+  }
+
+  .pricing {
+    .row {
+      display: flex;
+
+      > div {
+        margin-left: 8px;
+      }
+    }
+
+    .pricing-left {
+      flex: 1;
+    }
+
+    .pricing-right {
+      flex: 0 0 auto;
+      text-align: right;
+    }
+
+    .grand-total {
+      font-weight: bold;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    .terms-and-conditions {
+      margin: 15px;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .side-panel {
+      margin: 10px 0 0 0;
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    .card-number-wrapper,
+    .expiry-wrapper,
+    .cvc-wrapper {
+      padding-right: 0;
+    }
+  }
+}

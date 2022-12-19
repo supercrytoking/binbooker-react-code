@@ -1,0 +1,45 @@
+@import "../../mixins.scss";
+
+.orders__table {
+  th {
+    @include cutOffTitles;
+  }
+
+  .order__id {
+    width: 67px;
+  }
+
+  .order__fully-paid {
+    width: 20px;
+  }
+
+  .order__customer {
+    width: 32%;
+  }
+
+  .order__service {
+    width: 24%;
+  }
+
+  .order__date {
+    width: 30%;
+  }
+}
+
+.orders-filter-wrapper {
+  display: flex;
+}
+
+.orders-filter-wrapper__filter {
+  flex: 1;
+  padding-right: 10px;
+}
+
+.orders-filter-wrapper__toggle {
+  align-self: center;
+  display: flex;
+}
+
+.orders-filter-wrapper__toggle .toggle-switch {
+  margin-right: 5px;
+}

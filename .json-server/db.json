@@ -1,0 +1,734 @@
+{
+  "bins": [
+    {
+      "id": "1",
+      "userId": "1",
+      "size": "5",
+      "foreignId": "a",
+      "isActive": "1",
+      "orderId": null,
+      "endDateTime": null
+    },
+    {
+      "id": "2",
+      "userId": "1",
+      "size": "10",
+      "foreignId": "b",
+      "isActive": "1",
+      "orderId": "18252",
+      "endDateTime": "2020-12-01 23:59:59"
+    },
+    {
+      "id": "3",
+      "userId": "1",
+      "size": "15",
+      "foreignId": "c",
+      "isActive": "1",
+      "orderId": null,
+      "endDateTime": null
+    },
+    {
+      "id": "4",
+      "userId": "1",
+      "size": "20",
+      "foreignId": "d",
+      "isActive": "1",
+      "orderId": null,
+      "endDateTime": null
+    }
+  ],
+  "coupons": [
+    {
+      "id": 1,
+      "code": "COUPON_CODE1",
+      "startDate": "2018-02-01",
+      "endDate": "2018-02-28",
+      "services": [
+        {
+          "id": 1,
+          "name": "Service 1"
+        },
+        {
+          "id": 3,
+          "name": "Service 3"
+        },
+        {
+          "id": 4,
+          "name": "Service 4"
+        }
+      ],
+      "value": 20,
+      "isPercent": false
+    },
+    {
+      "id": 2,
+      "code": "COUPON_CODE2",
+      "startDate": "2018-02-01",
+      "endDate": "2018-02-07",
+      "services": [
+        {
+          "id": 4,
+          "name": "Service 4"
+        }
+      ],
+      "value": 15,
+      "isPercent": true
+    },
+    {
+      "id": 3,
+      "code": "COUPON_CODE3",
+      "startDate": "2018-02-01",
+      "endDate": "2018-02-28",
+      "services": [
+        {
+          "id": 1,
+          "name": "Service 1"
+        },
+        {
+          "id": 2,
+          "name": "Service 2"
+        },
+        {
+          "id": 3,
+          "name": "Service 3"
+        },
+        {
+          "id": 4,
+          "name": "Service 4"
+        }
+      ],
+      "value": 50.1,
+      "isPercent": false
+    },
+    {
+      "id": 4,
+      "code": "COUPON_CODE4",
+      "startDate": "2018-02-01",
+      "endDate": "2018-02-07",
+      "services": [
+        {
+          "id": 1,
+          "name": "Service 1"
+        },
+        {
+          "id": 2,
+          "name": "Service 2"
+        },
+        {
+          "id": 4,
+          "name": "Service 4"
+        }
+      ],
+      "value": 10,
+      "isPercent": true
+    }
+  ],
+  "customers": {
+    "currentPage": "1",
+    "totalPages": 2,
+    "customers": [
+      {
+        "id": "18",
+        "firstName": "Aaron",
+        "lastName": "Bautista",
+        "companyName": "",
+        "phone": "111-222-3333",
+        "email": "aaronb@fake.com",
+        "billingStreet1": "Street Addy 1",
+        "billingCity": "Hampton",
+        "billingPostalCode": "V6B 6B6",
+        "billingProvince": "BC",
+        "billingCountry": "",
+        "notes": "joey bats edited notes",
+        "stripeId": "cus_H5RQgQffU7rOqd"
+      },
+      {
+        "id": "4145",
+        "firstName": "Bugs",
+        "lastName": "Bunny",
+        "companyName": "",
+        "phone": "111-222-1111",
+        "email": "bugs@acme.com",
+        "billingStreet1": "11 Broadway Street",
+        "billingCity": "Seattle",
+        "billingPostalCode": "98116",
+        "billingProvince": "AB",
+        "billingCountry": "",
+        "notes": "He is a wascally wabbit",
+        "stripeId": "cus_HZVIPac9bk2HiJ"
+      }
+    ]
+  },
+  "customers-email-new": {
+    "found": false
+  },
+  "customers-email-existing": {
+    "found": true
+  },
+  "customers-orders": [
+    {
+      "id": "18252",
+      "deliveryStreet1": "123 Fake Street",
+      "deliveryCity": "Vancouver",
+      "deliveryPostalCode": "A1A 1A1",
+      "deliveryProvince": "BC",
+      "notes": "",
+      "deleted": null,
+      "title": "10 Yard",
+      "startDateTime": "2020-11-30 00:00:00",
+      "endDateTime": "2020-12-01 23:59:59"
+    }
+  ],
+  "customers-search": {
+    "success": true,
+    "errorMessage": "",
+    "customers": [
+      {
+        "id": "1",
+        "firstName": "Adam",
+        "lastName": "Doe",
+        "companyName": "",
+        "phone": "604-666-0000",
+        "email": "adam@fake.com",
+        "billingStreet1": "123 Fake Street",
+        "billingCity": "Vancouver",
+        "billingPostalCode": "V5Y 0E8",
+        "billingProvince": "BC",
+        "billingCountry": "Canada",
+        "notes": "",
+        "stripeId": "cus_FMAsFqZLShpsQZ",
+        "orders": [
+          {
+            "id": "18252",
+            "deliveryStreet1": "123 Fake Street",
+            "deliveryCity": "Vancouver",
+            "deliveryPostalCode": "A1A 1A1",
+            "deliveryProvince": "BC",
+            "notes": "",
+            "deleted": null,
+            "title": "10 Yard",
+            "startDateTime": "2020-11-30 00:00:00",
+            "endDateTime": "2020-12-01 23:59:59"
+          }
+        ]
+      }
+    ]
+  },
+  "fully-booked-dates": [],
+  "get-coupons-create-order-backend": [
+    {
+      "code": "aaa",
+      "value": 12.34
+    },
+    {
+      "code": "bbb",
+      "value": 50
+    }
+  ],
+  "holidays": [
+    {
+      "id": 1,
+      "name": "Christmas",
+      "date": "2019-12-25"
+    },
+    {
+      "id": 2,
+      "name": "Labour day",
+      "date": "2019-09-02"
+    },
+    {
+      "name": "Father's Day",
+      "date": "2019-06-16",
+      "id": 4
+    },
+    {
+      "name": "Canada Day",
+      "date": "2019-07-01",
+      "id": 5
+    }
+  ],
+  "is-logged-in": {"isLoggedIn": true},
+  "items": [
+    {
+      "id": 1,
+      "name": "Foo",
+      "unitPrice": "24.99"
+    },
+    {
+      "id": 2,
+      "name": "Bar",
+      "unitPrice": "10"
+    },
+    {
+      "id": 8,
+      "name": "Baz",
+      "unitPrice": "199.50"
+    }
+  ],
+  "order": {
+    "items": [
+      {
+        "id": "14330",
+        "orderId": "18252",
+        "description": "Rental",
+        "quantity": "1.0000",
+        "unitPrice": "999.00",
+        "tax1": "0.0123",
+        "tax2": "0.0000",
+        "paymentMethod": "cash",
+        "paymentConfirmationId": "",
+        "refundConfirmationId": "",
+        "notes": ""
+      }
+    ],
+    "deliveryAddress": {
+      "deliveryStreet1": "123 Fake Street",
+      "deliveryCity": "Vancouver",
+      "deliveryPostalCode": "A1A 1A1",
+      "deliveryProvince": "BC",
+      "deliveryCountry": ""
+    },
+    "notes": "",
+    "attachments": [],
+    "createdBy": "Jamie",
+    "createdOn": "2021-02-14 23:59:59"
+  },
+  "orders": {
+    "currentPage": "1",
+    "totalPages": 1,
+    "orders": [
+      {
+        "id": "18252",
+        "customerId": "1",
+        "companyName": "",
+        "firstName": "Adam",
+        "lastName": "Doe",
+        "phone": "604-666-0000",
+        "email": "adam@fake.com",
+        "stripeId": "cus_FMAsFqZLShpsQZ",
+        "title": "10 Yard",
+        "dropOff": "2020-11-30 01:00:00",
+        "pickUp": "2020-12-01 01:00:00",
+        "isFullyPaid": "1",
+        "poNumber": "",
+        "created_by": "Jamie",
+        "created_on": "2021-02-14 23:59:59"
+      }
+    ]
+  },
+  "pc": {
+    "covered": true
+  },
+  "schedule": {
+    "trucks": [
+      {
+        "id": "1",
+        "foreignId": "Honda",
+        "appointments": [
+          {
+            "orderId": "18252",
+            "deliveryStreet1": "123 Fake Street",
+            "deliveryCity": "Vancouver",
+            "deliveryPostalCode": "A1A 1A1",
+            "deliveryProvince": "BC",
+            "orderNotes": "",
+            "type": "d",
+            "orderTruckId": "37324",
+            "startDateTime": "2020-11-30 01:00:00",
+            "endDateTime": "2020-11-30 01:59:59",
+            "isComplete": 0,
+            "customerId": "1",
+            "firstName": "Adam",
+            "lastName": "Doe",
+            "email": "adam@fake.com",
+            "phone": "604-666-0000",
+            "customerNotes": "",
+            "title": "10 Yard",
+            "binId": "b"
+          }
+        ],
+        "fillers": []
+      }
+    ]
+  },
+  "services": [
+    {
+      "id": "1",
+      "title": "5 Yarder!",
+      "description": "<p>some text</p>",
+      "extraCostPerDay": "10",
+      "includedDays": "1",
+      "imagePath": "service-1111.png",
+      "size": "5",
+      "zones": [
+        {
+          "name": "North Shore",
+          "id": 226,
+          "isActive": true,
+          "rentalPrice": "500.00"
+        },
+        {
+          "name": "Surrey",
+          "id": 228,
+          "isActive": true,
+          "rentalPrice": "500.00"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "5 Yard Soil v3",
+      "description": "<p>desc v2</p><p>second line</p><p>this is really line 3</p>",
+      "extraCostPerDay": "7",
+      "includedDays": "1",
+      "size": "5",
+      "imagePath": "service-2222.png",
+      "zones": [
+        {
+          "name": "North Shore",
+          "id": 226,
+          "isActive": true,
+          "rentalPrice": "998.03"
+        },
+        {
+          "name": "Surrey",
+          "id": 228,
+          "isActive": false,
+          "rentalPrice": "999.00"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "10 Yard",
+      "description": "",
+      "extraCostPerDay": "10",
+      "includedDays": "3",
+      "imagePath": "service-3333.png",
+      "size": "10",
+      "zones": [
+        {
+          "name": "North Shore",
+          "id": 226,
+          "isActive": true,
+          "rentalPrice": "998.04"
+        },
+        {
+          "name": "Surrey",
+          "id": 228,
+          "isActive": true,
+          "rentalPrice": "999.00"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "15 Yard",
+      "description": "",
+      "extraCostPerDay": 15,
+      "includedDays": "12",
+      "size": "15",
+      "imagePath": "",
+      "zones": [
+        {
+          "name": "North Shore",
+          "id": 226,
+          "isActive": true,
+          "rentalPrice": "999.00"
+        },
+        {
+          "name": "Surrey",
+          "id": 228,
+          "isActive": true,
+          "rentalPrice": "999.00"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "20 Yard",
+      "description": "<p>asdfasdf</p>",
+      "extraCostPerDay": "15",
+      "includedDays": "1",
+      "size": "20",
+      "imagePath": "service-5555.png",
+      "zones": [
+        {
+          "name": "North Shore",
+          "id": 226,
+          "isActive": true,
+          "rentalPrice": "21.01"
+        },
+        {
+          "name": "Surrey",
+          "id": 228,
+          "isActive": true,
+          "rentalPrice": "22.02"
+        }
+      ]
+    }
+  ],
+  "services-create-order": [
+    {
+      "id": "1",
+      "size": "5",
+      "title": "5 Yarder!",
+      "description": "<p>asasdf</p>",
+      "imagePath": "sample-5.jpg",
+      "rentalPrice": "250.00",
+      "extraDaysPrice": 15,
+      "noDatesAvailable": false,
+      "suggestedStartDate": null,
+      "suggestedEndDate": null
+    },
+    {
+      "id": "2",
+      "size": "5",
+      "title": "5 Yard Soil v3",
+      "description": "<p>desc v2</p><p>second line</p><p>this is really line 3</p>",
+      "imagePath": "sample-5.jpg",
+      "rentalPrice": "260.00",
+      "extraDaysPrice": 15,
+      "noDatesAvailable": false,
+      "suggestedStartDate": null,
+      "suggestedEndDate": null
+    },
+    {
+      "id": "3",
+      "size": "10",
+      "title": "10 Yard",
+      "description": "",
+      "imagePath": "sample-10.jpg",
+      "rentalPrice": "270.00",
+      "extraDaysPrice": 15,
+      "noDatesAvailable": false,
+      "suggestedStartDate": "2021-05-18",
+      "suggestedEndDate": "2021-05-22"
+    },
+    {
+      "id": "4",
+      "size": "15",
+      "title": "15 Yard",
+      "description": "",
+      "imagePath": "sample-15.jpg",
+      "rentalPrice": "280.00",
+      "extraDaysPrice": 15,
+      "noDatesAvailable": false,
+      "suggestedStartDate": "2021-05-18",
+      "suggestedEndDate": "2021-05-22"
+    },
+    {
+      "id": "5",
+      "size": "20",
+      "title": "20 Yard",
+      "description": "",
+      "imagePath": "sample-20.jpg",
+      "rentalPrice": "290.00",
+      "extraDaysPrice": 15,
+      "noDatesAvailable": false,
+      "suggestedStartDate": null,
+      "suggestedEndDate": null
+    }
+  ],
+  "staff": [
+    {
+      "id": "1126",
+      "name": "arnold palmer",
+      "email": "arnie@fake.com",
+      "isActive": "1",
+      "created": "2020-08-26",
+      "deleted": null,
+      "pageAccess": {
+        "schedule": false,
+        "truckSchedule": false,
+        "orders": false,
+        "createOrder": false,
+        "customers": false,
+        "manageBins": false,
+        "manageCoupons": false,
+        "manageHolidays": false,
+        "manageItems": false,
+        "manageServices": false,
+        "manageSettings": false,
+        "manageStaff": false,
+        "manageZones": false
+      }
+    },
+    {
+      "id": "1",
+      "name": "Jamie K",
+      "email": "admin@sampledisposal.com",
+      "isActive": "1",
+      "created": "2020-03-15",
+      "deleted": null,
+      "pageAccess": {
+        "schedule": true,
+        "truckSchedule": true,
+        "orders": true,
+        "createOrder": true,
+        "customers": true,
+        "manageBins": true,
+        "manageCoupons": true,
+        "manageHolidays": true,
+        "manageItems": true,
+        "manageServices": true,
+        "manageSettings": true,
+        "manageStaff": true,
+        "manageZones": true
+      }
+    },
+    {
+      "id": "2",
+      "name": "Truck Driver",
+      "email": "driver@sampledisposal.com",
+      "isActive": "1",
+      "created": "2020-03-17",
+      "deleted": null,
+      "pageAccess": {
+        "schedule": false,
+        "truckSchedule": true,
+        "orders": false,
+        "createOrder": false,
+        "customers": false,
+        "manageBins": false,
+        "manageCoupons": false,
+        "manageHolidays": false,
+        "manageItems": false,
+        "manageServices": false,
+        "manageSettings": false,
+        "manageStaff": false,
+        "manageZones": false
+      }
+    }
+  ],
+  "staff-logged-in": {
+    "id": "1",
+    "name": "Jamie K",
+    "email": "admin@sampledisposal.com",
+    "isActive": "1",
+    "created": "2020-03-15",
+    "deleted": null,
+    "pageAccess": {
+      "schedule": true,
+      "truckSchedule": true,
+      "orders": true,
+      "createOrder": true,
+      "customers": true,
+      "manageBins": true,
+      "manageCoupons": true,
+      "manageHolidays": true,
+      "manageItems": true,
+      "manageServices": true,
+      "manageSettings": true,
+      "manageStaff": true,
+      "manageZones": true
+    }
+  },
+  "truck-schedule": {
+    "appointments": [
+      {
+        "orderId": "106218",
+        "deliveryStreet1": "136 Eagle Valley Lane",
+        "deliveryCity": "Everett",
+        "deliveryPostalCode": "98207",
+        "deliveryProvince": "WA",
+        "orderNotes": "Put as close to the shed as possible",
+        "type": "d",
+        "orderTruckId": "1033",
+        "startDateTime": "2020-12-19 01:00:00",
+        "endDateTime": "2020-12-19 01:59:59",
+        "isComplete": 1,
+        "customerId": "426",
+        "firstName": "Brian",
+        "lastName": "Burris",
+        "email": "b.burris@fake.com",
+        "phone": "202-555-5091",
+        "customerNotes": "Buzz 3904",
+        "title": "20 yard",
+        "binId": "2001"
+      }
+    ],
+    "fillers": [
+      {
+        "orderTruckId": "9524",
+        "startDateTime": "2020-12-19 02:00:00",
+        "endDateTime": "2020-12-19 02:59:59",
+        "isComplete": 1
+      },
+      {
+        "orderTruckId": "9525",
+        "startDateTime": "2020-12-19 03:00:00",
+        "endDateTime": "2020-12-19 03:59:59",
+        "isComplete": 0
+      }
+    ],
+    "foreignId": "Peterbilt"
+  },
+  "trucks": [
+    {
+      "id": "1",
+      "userId": "1",
+      "foreignId": "Peterbilt",
+      "isActive": "1"
+    },
+    {
+      "id": "4",
+      "userId": "1",
+      "foreignId": "Fuso",
+      "isActive": "1"
+    }
+  ],
+  "user": {
+    "address1": "123 Fake Street",
+    "address2": "",
+    "agreedToTermsDate": "2020-11-16",
+    "city": "Vancouver",
+    "cityText": "",
+    "closedDaysOfWeek": "0",
+    "colour": "#337ab7",
+    "companyName": "Sample Disposal Ltd",
+    "confirmationText": "",
+    "currency": "CAD",
+    "dateText": "",
+    "email": "info@test.com",
+    "extraCostPerDay": "10.00",
+    "includedDays": "1",
+    "infoText": "",
+    "logoPath": "sample.png",
+    "maxJobsFriday": "5",
+    "maxJobsMonday": "5",
+    "maxJobsSaturday": "5",
+    "maxJobsSunday": "0",
+    "maxJobsThursday": "5",
+    "maxJobsTuesday": "5",
+    "maxJobsWednesday": "5",
+    "phoneNumber": "1-888-111-2222",
+    "postalCode": "V5Y 0E8",
+    "province": "BC",
+    "reviewText": "",
+    "serviceText": "",
+    "showHeader": "1",
+    "stripeId": "sk_test_tmXfcqsV8zD0Fv0O51DxwfnL",
+    "stripePublishableKey": "pk_test_i0S5FblMf6CGMwhc5tBHk3Pj",
+    "tax1": "0.0123",
+    "tax1Name": "pst",
+    "tax2": "0.0000",
+    "tax2Name": "",
+    "taxRegistrationTitle": "HST#",
+    "taxRegistrationValue": "AD12-5BWU211",
+    "termsAndConditions": "",
+    "url": "http://www.abcdefg.com"
+  },
+  "zones": [
+    {
+      "id": 226,
+      "name": "North Shore",
+      "postalCodes": ["V** ***"]
+    },
+    {
+      "id": 228,
+      "name": "Surrey",
+      "postalCodes": ["A** ***", "B** ***"]
+    }
+  ]
+}

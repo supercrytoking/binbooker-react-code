@@ -1,0 +1,20 @@
+.staff-container {
+  tr.inactive {
+    color: silver;
+  }
+
+  .staff__avatar {
+    width: 50px;
+  }
+
+  .staff__name {
+  }
+
+  .staff__email {
+    font-style: italic;
+  }
+
+  .staff-container__add-button {
+    margin-top: 20px;
+  }
+}

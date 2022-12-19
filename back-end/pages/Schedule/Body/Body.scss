@@ -1,0 +1,21 @@
+#schedule-container {
+  .truck-picker {
+    margin-left: 32px;
+  }
+}
+
+.schedule-body {
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  #schedule-container {
+    .truck-picker {
+      margin-left: 0;
+
+      select {
+        width: 100%;
+      }
+    }
+  }
+}

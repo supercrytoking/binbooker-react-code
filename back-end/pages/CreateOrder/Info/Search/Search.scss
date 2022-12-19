@@ -1,0 +1,22 @@
+.create-order__search-results {
+  background-color: white;
+  border: 2px solid silver;
+  max-height: 200px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  width: 96%;
+  z-index: 1;
+
+  .table {
+    margin-bottom: 0;
+  }
+
+  .search__spinner-wrapper {
+    margin: 8px;
+  }
+}
+
+.create-order__unload-customer {
+  cursor: pointer;
+}

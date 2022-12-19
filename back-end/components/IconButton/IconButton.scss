@@ -1,0 +1,24 @@
+.icon-button {
+  align-items: center;
+  background: white;
+  border-radius: 4px;
+  color: silver;
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  transition: all 0.2s;
+  width: 32px;
+
+  &.icon-button--disabled {
+    cursor: not-allowed;
+
+    &:hover {
+      color: silver;
+    }
+  }
+
+  &:hover {
+    color: #333;
+  }
+}

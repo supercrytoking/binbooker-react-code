@@ -1,0 +1,30 @@
+.services__image__wrapper {
+  .service-image {
+    display: flex;
+    overflow: hidden;
+
+    .service-image__image-part {
+      overflow: hidden;
+      position: relative;
+      margin: auto;
+
+      img {
+        max-height: 200px;
+        max-width: 100%;
+      }
+
+      .action {
+        position: absolute;
+        top: 4px;
+      }
+
+      .expand {
+        right: 40px;
+      }
+
+      .delete {
+        right: 4px;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.quickbooks-button {
+  border: none;
+  background: #23a22e;
+  border-radius: 4px;
+  color: white;
+  padding: 6px 8px;
+
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-right: 8px;
+  }
+
+  &:hover {
+    background: #1f8c28;
+  }
+}

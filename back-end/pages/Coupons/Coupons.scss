@@ -1,0 +1,47 @@
+@import "../../mixins.scss";
+
+.coupons-page {
+  th {
+    @include cutOffTitles;
+  }
+
+  .coupon-services {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style-type: none;
+    }
+  }
+}
+
+.coupons-sidepanel {
+  .coupons__isPercent {
+    button {
+      width: 50%;
+    }
+
+    .active,
+    .active:hover,
+    .active:focus {
+      color: #ffffff;
+      background-color: #1663a1;
+      border-color: #105fa0;
+    }
+  }
+
+  // Undo a bootstrap style setting that causes some elements to be on top of the calendar pop-up
+  .input-group .form-control,
+  .btn-group > .btn.active {
+    z-index: unset;
+  }
+
+  .coupons-action-buttons {
+    display: flex;
+    flex-direction: row;
+
+    .btn-primary {
+      margin-right: 8px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.sidepanel__address-tab {
+  .address-tab__postal-code-province {
+    display: flex;
+  }
+  .address-tab__postal-code {
+    flex: 1;
+    margin-right: 8px;
+  }
+
+  .address-tab__province {
+    flex: 1;
+    margin-left: 8px;
+  }
+}

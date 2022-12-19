@@ -1,0 +1,116 @@
+.create-order {
+  .service {
+    border: 1px solid silver;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 10px 10px 10px 8px;
+    transition: border 0.4s ease;
+
+    &.service--active {
+      background-color: #efefef;
+      border: 1px solid rgb(39, 40, 34);
+    }
+
+    &.service--enabled {
+      &:hover {
+        border: 1px solid rgb(39, 40, 34);
+        cursor: pointer;
+      }
+    }
+
+    &.service--disabled {
+      cursor: not-allowed;
+
+      input {
+        cursor: not-allowed;
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .alert {
+      margin: 8px 0 0 0;
+    }
+
+    .glyphicon-question-sign {
+      color: silver;
+      font-size: 14px;
+      margin-left: 8px;
+    }
+
+    input {
+      float: left;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .content {
+      overflow: hidden;
+      h4 {
+        margin-top: 6px;
+        margin-left: 39px;
+
+        small {
+          margin-left: 8px;
+        }
+      }
+    }
+
+    .second-service-image {
+      display: none;
+    }
+
+    img {
+      float: right;
+      max-height: 200px;
+      max-width: 200px;
+      margin-left: 8px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      text-align: center;
+
+      .first-service-image {
+        display: none;
+      }
+
+      .second-service-image {
+        display: block;
+        float: unset;
+        margin: 8px auto 0 auto;
+        max-height: 80px;
+        max-width: 100%;
+        width: auto;
+      }
+
+      .content {
+        text-align: left;
+      }
+    }
+  }
+
+  .service--bin-selector .form-group {
+    display: flex;
+    align-items: center;
+
+    select {
+      margin-left: 8px;
+      width: auto;
+    }
+  }
+}
+
+.service__pricing-popover > div {
+  display: flex;
+  justify-content: space-between;
+  width: 136px;
+}
+
+.service__pricing-popover__taxes {
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 4px;
+}

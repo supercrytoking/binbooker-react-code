@@ -1,0 +1,13 @@
+.fe__create-order-wrapper {
+  margin: 10px;
+
+  .create-order {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 20px);
+
+    .create-order__body {
+      flex: 1 0 auto;
+    }
+  }
+}

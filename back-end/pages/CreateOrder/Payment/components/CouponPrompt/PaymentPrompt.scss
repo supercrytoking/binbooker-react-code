@@ -1,0 +1,39 @@
+// FYI This is used in CouponPrompt and ManualDiscountPrompt
+
+.payment-prompt {
+  display: flex;
+  align-items: center;
+
+  &.alert {
+    margin-bottom: 8px;
+    padding: 8px;
+  }
+
+  .payment-prompt__instructions {
+    flex: 1 1 auto;
+  }
+
+  .payment-prompt__inputs {
+    flex: 0 0 auto;
+    margin: 0 8px;
+
+    .input-group-addon {
+      width: auto; // safari fix
+    }
+
+    .coupon-code__input {
+      display: inline;
+      height: auto;
+      width: auto;
+    }
+
+    .coupon-code__select {
+      display: inline;
+      width: auto;
+    }
+  }
+
+  .payment-prompt__actions {
+    flex: 0 0 auto;
+  }
+}

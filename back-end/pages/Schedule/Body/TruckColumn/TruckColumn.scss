@@ -1,0 +1,13 @@
+.truck-column {
+  flex: 1;
+  margin: 0 4px;
+
+  .truck-name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .truck-column__slots {
+    margin-left: 8px;
+  }
+}

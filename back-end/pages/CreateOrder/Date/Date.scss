@@ -1,0 +1,29 @@
+.create-order-date-wrapper {
+  .DayPicker {
+    margin: 0 auto;
+  }
+
+  .DateInput {
+    width: 120px;
+
+    input {
+      font-size: 14px;
+      font-weight: 400;
+      padding: 4px 4px 4px 12px;
+    }
+  }
+
+  .DateInput_input__focused {
+    border-bottom: 2px solid #337ab7 !important;
+  }
+
+  .action-bar {
+    margin-top: 370px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .action-bar {
+      margin-top: 555px;
+    }
+  }
+}

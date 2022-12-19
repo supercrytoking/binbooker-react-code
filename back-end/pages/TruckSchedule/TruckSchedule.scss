@@ -1,0 +1,26 @@
+.schedule-app {
+  -webkit-overflow-scrolling: touch;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .truck-picker {
+      display: block;
+      margin-bottom: 8px;
+    }  
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .schedule-app {
+    .truck-picker {
+      margin-top: 0;
+
+      select {
+        width: 100%;
+      }
+    }
+  }
+}

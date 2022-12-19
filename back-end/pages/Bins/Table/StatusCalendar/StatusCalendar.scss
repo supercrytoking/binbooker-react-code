@@ -1,0 +1,76 @@
+$bootstrap-red: #d9534f;
+
+.status-calendar {
+  display: flex;
+
+  .status-calendar__day {
+    font-size: 12px;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-right: 0px;
+    overflow: hidden; // needed if on smaller screen
+
+    /* Contents */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:last-of-type {
+      border-right: 1px solid #ddd;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 0;
+      width: 0;
+      height: 0;
+      border: 15px solid transparent;
+    }
+
+    &.status--full-day:before {
+      border-color: $bootstrap-red;
+    }
+
+    &.status--pick-up:before {
+      border-top-color: $bootstrap-red;
+      border-left-color: $bootstrap-red;
+    }
+
+    &.status--drop-off:before {
+      border-bottom-color: $bootstrap-red;
+      border-right-color: $bootstrap-red;
+    }
+
+    &.status--weekend {
+      color: #bbb;
+    }
+
+    &.status--closed {
+      text-decoration: line-through;
+    }
+
+    .status-calendar__divider {
+      display: none;
+      width: 43px;
+      height: 1px;
+      transform: rotate(-45deg);
+      position: absolute;
+      background: #ddd;
+      top: 14px;
+      left: -7px;
+    }
+
+    &.status--drop-off-and-pick-up .status-calendar__divider {
+      display: block;
+    }
+  }
+
+  .status-calendar__content {
+    position: relative;
+    z-index: 1;
+  }
+}

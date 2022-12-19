@@ -1,0 +1,34 @@
+// Styles used on multiple pages (ideally these could be moved to their component's stylesheet):
+
+/* Customers, Orders, Services, Bins */
+tbody tr:hover {
+  cursor: pointer;
+  background-color: #efefef !important;
+}
+
+/* Multiple Airbnb calendars */
+.DateInput__display-text {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+// Tables in the back end (in mobile mode) are going outside of the div.
+table {
+  table-layout: fixed;
+
+  th,
+  td {
+    word-wrap: break-word;
+  }
+}
+
+// Tabs
+@media only screen and (max-width: 848px) {
+  .nav.nav-tabs li a {
+    padding: 5px 5px;
+  }
+}
+
+.tab-content {
+  margin-top: 8px;
+}

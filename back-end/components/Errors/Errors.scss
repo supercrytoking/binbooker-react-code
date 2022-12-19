@@ -1,0 +1,14 @@
+.errors-wrapper {
+  // put it on top, use auto width and centre it
+  &.on-top {
+    left: 50%;
+    position: fixed;
+    top: 16px;
+    width: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}

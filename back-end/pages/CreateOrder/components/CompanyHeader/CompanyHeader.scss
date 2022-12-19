@@ -1,0 +1,32 @@
+.create-order__company-header {
+  display: flex;
+  border-bottom: 1px solid silver;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+
+  .company-header-logo {
+    flex: 1;
+
+    img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+
+  address {
+    flex: 0 1 auto;
+    margin-left: 10px;
+    margin-bottom: 0;
+
+    label {
+      font-weight: normal;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .create-order__company-header .company-header-logo img {
+    max-height: 50px;
+  }
+}

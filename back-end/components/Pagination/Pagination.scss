@@ -1,0 +1,17 @@
+.jk-pagination {
+  margin: 0;
+
+  .open > .dropdown-menu {
+    max-height: 400px;
+    overflow: scroll;
+  }
+
+  .disabled a {
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .caret {
+    transform: rotate(180deg);
+  }
+}

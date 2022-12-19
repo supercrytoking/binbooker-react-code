@@ -1,0 +1,55 @@
+.order-attachments {
+  .order-attachments {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .order-attachment {
+    box-sizing: border-box;
+    flex: 0 0 calc(33.3% - 16px);
+    overflow: hidden;
+    margin: 8px;
+    padding: 8px;
+
+    // separate notes section
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .order-attachment__image-part {
+      overflow: hidden;
+      position: relative;
+
+      img {
+        max-height: 200px;
+        max-width: 100%;
+      }
+
+      .action {
+        position: absolute;
+        top: 4px;
+      }
+
+      .expand {
+        right: 40px;
+      }
+
+      .delete {
+        right: 4px;
+      }
+    }
+
+    .order-attachment__notes {
+      font-style: italic;
+      margin-top: 8px;
+      word-wrap: break-word;
+
+      // add ellipsis after 2 lines
+      width: 100%;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+  }
+}

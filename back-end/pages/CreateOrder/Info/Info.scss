@@ -1,0 +1,54 @@
+.create-order__info {
+  .create-order__info__customer-search {
+    margin-bottom: 8px;
+  }
+  .create-order__info-form {
+    .row {
+      label {
+        margin-bottom: 0;
+      }
+
+      input,
+      select {
+        margin-bottom: 10px;
+      }
+
+      margin-bottom: 0px;
+      margin-left: 0;
+    }
+
+    input[type="checkbox"] {
+      margin: 0 4px 0 0;
+    }
+
+    .is-same-wrapper {
+      margin-bottom: 10px;
+
+      label {
+        font-weight: normal;
+      }
+    }
+
+    .delivery-address--is-same {
+      display: none;
+    }
+
+    .no-padding {
+      padding-left: 0;
+
+      & + .no-padding {
+        padding-right: 0;
+      }
+    }
+
+    .create-order__info__errors {
+      margin-top: 10px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .alert ul {
+        padding-left: 20px;
+      }
+    }
+  }
+}

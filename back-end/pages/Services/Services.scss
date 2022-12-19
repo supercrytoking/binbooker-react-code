@@ -1,0 +1,60 @@
+@import "../../mixins.scss";
+
+.services-page {
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  th {
+    @include cutOffTitles;
+  }
+
+  td {
+    img {
+      max-height: 100px;
+      max-width: 100px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .tab-content {
+    margin-top: 8px;
+  }
+
+  .services__size {
+    width: 8%;
+  }
+
+  .services__title {
+    width: 16%;
+  }
+
+  .services__description {
+    width: 56%;
+  }
+
+  .services__image {
+    width: 16%;
+  }
+
+  .alert-dismissable {
+    z-index: 1;
+  }
+
+  .glyphicon-question-sign {
+    color: silver;
+    margin-left: 4px;
+  }
+}
+
+.services__action-buttons {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+
+  .btn-primary {
+    margin-right: 8px;
+  }
+}

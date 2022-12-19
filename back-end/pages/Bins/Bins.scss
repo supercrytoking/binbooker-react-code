@@ -1,0 +1,61 @@
+@import "../../mixins.scss";
+
+.bins-container {
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  th {
+    @include cutOffTitles;
+  }
+
+  .bin__id {
+    width: 10%;
+  }
+
+  .bin__size {
+    width: 10%;
+  }
+
+  .bin__active {
+    width: 10%;
+  }
+
+  .bin__status {
+    width: 70%;
+
+    .bin__status__heading {
+      display: inline-block;
+      margin-top: 14px;
+    }
+
+    .bin-location-button {
+      float: right;
+    }
+  }
+}
+
+.bins-details {
+  .form-check-input {
+    margin-left: 8px;
+  }
+
+  .pending-button {
+    margin: 8px 8px 0 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bins-container {
+    .bin__active {
+      width: 20%;
+    }
+
+    .bin__status {
+      width: 60%;
+    }
+
+    .bin-locations-text {
+      display: none;
+    }
+  }
+}
